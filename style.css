@@ -1,0 +1,137 @@
+font-face {
+    font-family: "LetraTitulo";
+    src: url(../font/static/YanoneKaffeesatz-Bold.ttf);
+}
+@font-face {
+    font-family: "LetraTexto";
+    src: url(../font/YanoneKaffeesatz-VariableFont_wght.ttf);
+}
+body{   
+    margin: 0; 
+    padding: 0;
+}
+.grid-container-header{
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "logo titulo";
+    background-color: #000000;
+    padding: 20px;
+}
+.grid-logo{
+    grid-area:logo;
+    justify-self: center;
+    align-self: center;
+}
+.grid-titulo{
+    grid-area: titulo;
+    justify-self: center;
+    align-self:end;
+    text-align: center;
+    color: azure;
+}
+#fondo{
+    width: 160px;
+}
+.center{
+    text-align: center;
+}
+@media(max-width:600px){
+    .grid-container-header{
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(2, auto);
+        grid-template-areas: 
+            "logo"
+            "titulo";
+    } 
+}
+.menu ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    margin: 0%;
+    background-position: 0px;
+}
+   .menu a{
+       background-color: rgb(255, 255, 255);
+       text-decoration: none;
+       padding: 16px;
+       color:#000000;
+       display: block;
+       justify-self:absolute;
+   }
+   .menu a:hover{
+       background-color: rgb(73, 155, 158);
+   }
+   .menu ul li ul{
+       display: none;
+   }
+   .menu li:hover > ul{
+       display: block;
+   }
+   h1{
+    text-align: center;
+    font-size: 80px;
+    font-family: "LetraTitulo";
+    margin: 0;
+    padding: 8px;
+}
+p{
+    font-size: 30px;
+    font-family: "LetraTexto";
+    padding: 30px;
+    margin: 0;
+}
+h2{
+    text-align: center;
+    font-size: 40px;
+    font-family: "LetraTexto"; 
+}
+
+.contenedor-galeria{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    position: relative;
+}
+.item-galeria{
+    width: 300px;
+}
+.item-galeria img{
+    width: 100%;
+    height: 200px;
+}
+
+.contenedor-complic{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    position: relative;
+    margin:50px;
+}
+.blue{
+    background-color: #000000;
+    padding-top: 0px;
+    color: azure;
+    
+}
+.item-complic{
+    width: 200px;
+}
+.item-complic img{
+    width: 100%;
+    height: 200px
+}
+
+.footer{
+    margin-top: 600px;
+    height: 100px;
+    background-color:#4ECDC4;   
+}
+.footer-otro{
+    height: 40px;
+    margin-top: 100px;
+    background-color: #292F36;
+}
+
